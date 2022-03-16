@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Atable</string>
+    <string name="register">Inscription</string>
+    <string name="login">Connexion</string>
+    <string name="multiplesOpinions">Les avis sur ce restaurant</string>
+    <string name="prenom">Name</string>
+    <string name="back">retour</string>
+</resources>

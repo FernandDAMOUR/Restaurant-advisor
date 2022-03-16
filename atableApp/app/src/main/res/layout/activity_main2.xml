@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CE6E5942"
+    android:backgroundTintMode="screen"
+    tools:context=".activity.MainActivity2">
+
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="366dp"
+        android:layout_height="620dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/round_corner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.464" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="192dp"
+        android:layout_height="104dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.241" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="196dp"
+        android:text="Nom du restaurant :"
+        android:textColor="@color/Black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Namerest"
+        android:layout_width="145dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="4dp"
+        android:text="Name Rest"
+        android:textColor="@color/Black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/restGrade"
+        android:layout_width="50dp"
+        android:layout_height="33dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/Black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/Namerest"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.202" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="39dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="44dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.202"
+        app:srcCompat="@drawable/ic_star" />
+
+    <TextView
+        android:id="@+id/Adresse"
+        android:layout_width="72dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="8dp"
+        android:text="Adresse : "
+        android:textColor="@color/Black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/restLocal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Namerest"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/restLocal"
+        android:layout_width="189dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="44dp"
+        android:text="Localization"
+        android:textColor="@color/Black"
+        android:textStyle="bold"
+        app:layout_constraintCircleAngle="@android:integer/config_shortAnimTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.171"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Namerest"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/Horaires"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Horaires : "
+        android:textColor="@color/Black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/restHours"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.643"
+        app:layout_constraintStart_toEndOf="@+id/Adresse"
+        app:layout_constraintTop_toBottomOf="@+id/restGrade"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/restHours"
+        android:layout_width="117dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="76dp"
+        android:text="Hours"
+        android:textColor="@color/Black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toEndOf="@+id/restLocal"
+        app:layout_constraintTop_toBottomOf="@+id/restGrade"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/Telephone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Numero de téléphone : "
+        android:textColor="@color/Black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/restphone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Namerest"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/restphone"
+        android:layout_width="130dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="192dp"
+        android:text="PhoneNumber"
+        android:textColor="@color/Black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.882"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="222dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="8dp"
+        android:text="Description"
+        android:textColor="@color/Black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.204"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/restLocal"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnAvis"
+        android:layout_width="135dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="148dp"
+        android:background="@drawable/button_gradient"
+        android:outlineAmbientShadowColor="#3F51B5"
+        android:text="Afficher les avis"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnMenu"
+        app:layout_constraintHorizontal_bias="0.866"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/Blue"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnMenu"
+        android:layout_width="135dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="148dp"
+        android:background="@drawable/button_gradient"
+        android:text="Afficher les menus"
+        android:textColor="@color/White"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="117dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="76dp"
+        android:background="@drawable/button_gradient"
+        android:text="@string/back"
+        android:textColor="@color/White"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

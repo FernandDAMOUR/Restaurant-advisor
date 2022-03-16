@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CE6E5942"
+    android:orientation="vertical"
+    tools:context=".activity.ProfileUserActivity">
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="310dp"
+        android:layout_height="633dp"
+        android:background="@drawable/round_corner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.373" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="267dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="Page de Profil"
+        android:textColor="@color/Black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="54dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="136dp"
+        android:text="Username:"
+        android:textColor="@color/Black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        tools:ignore="MissingConstraints">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="36dp"
+        android:text="Name:"
+        android:textColor="@color/Black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUsername"
+        tools:ignore="MissingConstraints">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvLastame"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:text="Lastname:"
+        android:textColor="@color/Black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvName">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="36dp"
+        android:text="Email:"
+        android:textColor="@color/Black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLastame">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvAge"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="36dp"
+        android:text="Age:"
+        android:textColor="@color/Black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmail"
+        tools:ignore="MissingConstraints">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="115dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/button_gradient"
+        android:text="Logout"
+        android:textColor="@color/White"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAge"
+        app:layout_constraintVertical_bias="0.326" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

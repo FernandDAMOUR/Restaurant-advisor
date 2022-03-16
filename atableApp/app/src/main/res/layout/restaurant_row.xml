@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="368dp"
+        android:layout_height="261dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/round_corner"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="190dp"
+            android:layout_height="123dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.17"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/restaurant_name"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="12dp"
+            android:text="name: "
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.199"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <TextView
+            android:id="@+id/restaurant_id"
+            android:layout_width="77dp"
+            android:layout_height="23dp"
+            android:layout_marginBottom="20dp"
+            android:enabled="false"
+            android:fadeScrollbars="false"
+            android:text="id"
+            app:layout_constraintBottom_toTopOf="@+id/restaurant_grade"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.886"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="InvalidId" />
+
+        <TextView
+            android:id="@+id/restaurant_desc"
+            android:layout_width="287dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:text="desc"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/restaurant_hours"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="InvalidId" />
+
+        <TextView
+            android:id="@+id/restaurant_grade"
+            android:layout_width="56dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="84dp"
+            android:text="grade : "
+            app:layout_constraintBottom_toBottomOf="@+id/restaurant_localization"
+            app:layout_constraintEnd_toStartOf="@+id/imageView4"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            tools:ignore="InvalidId" />
+
+        <TextView
+            android:id="@+id/restaurant_localization"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="localization : "
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.612"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/restaurant_name"
+            tools:ignore="InvalidId" />
+
+        <TextView
+            android:id="@+id/restaurant_hours"
+            android:layout_width="287dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="24dp"
+            android:text="hours : "
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.548"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/restaurant_phone"
+            tools:ignore="InvalidId" />
+
+        <TextView
+            android:id="@+id/restaurant_phone"
+            android:layout_width="158dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="28dp"
+            android:text="hours : "
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.268"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/restaurant_localization"
+            tools:ignore="InvalidId" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="17dp"
+            android:layout_height="18dp"
+            android:layout_marginEnd="32dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.296"
+            app:srcCompat="@drawable/ic_star"
+            tools:visibility="visible" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
